@@ -1,4 +1,5 @@
 export interface GameEntry {
-    losers: Array<string>;
-    winners: Array<string>;
+    team1: Array<string>;
+    team2: Array<string>;
+    score: [number, number];
 }

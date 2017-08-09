@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { GamesModule } from 'app/games/games.module';
+import { RoutingModule } from 'app/routing/routing.module';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { GamesModule } from 'app/games/games.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    GamesModule
+    GamesModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

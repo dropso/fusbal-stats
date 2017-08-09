@@ -34,11 +34,11 @@ def listAllGames():
 def addGameEntry():
     resp = validatePutRequest()
     if(resp.status_code == 200):
-        print("Adding game entry 2.0")
         try:
-            gamelog.addGame(request.json)
+            args = request.json
+            print("Adding game:", args)
+            gamelog.addGame(args)
         except:
-            print("Unexpected error:", sys.exc_info()[0])
             raise
     return resp
 
