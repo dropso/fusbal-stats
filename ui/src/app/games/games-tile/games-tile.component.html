@@ -1,11 +1,17 @@
 <div class="container">
     <div class="team">
-        <div> Winners: </div>
-        <div *ngFor="let teamMate1 of game?.team1"> {{teamMate1}} </div>
+        <div class="team_cont"> Winners:
+            <div *ngFor="let teamMate1 of game?.team1"> {{teamMate1}} </div>
+        </div>
+        <div class="score_cont"> {{game?.score[0]}} </div>
     </div>
 
+
     <div class="team">
-        Losers: {{game?.team2[0]}}
+        <div class="score_cont"> {{game?.score[1]}} </div>
+        <div class="team_cont">Losers:
+            <div *ngFor="let teamMate2 of game?.team2"> {{teamMate2}} </div>
+        </div>
     </div>
 
 </div>

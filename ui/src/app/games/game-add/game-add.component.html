@@ -1,5 +1,11 @@
 <div>
-    Winners: <input type="text" [(ngModel)]="winners"> Losers: <input type="text" [(ngModel)]="losers">
+    Winners:
+    <input *ngFor="let t1 of team1;let index=index;trackBy:trackByIndex" type="text" [(ngModel)]="team1[index]">
+    <button (click)="addTeamMate1()">+</button>
+</div>
+<div>
+    Losers: <input *ngFor="let t2 of team2;let index2=index;trackBy:trackByIndex" type="text" [(ngModel)]="team2[index2]">
+    <button (click)="addTeamMate2()">+</button>
 </div>
 <div>
     <button (click)="saveGameEntry()">Add game</button>

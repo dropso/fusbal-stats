@@ -16,6 +16,7 @@ export class GamesListComponent implements OnInit {
   ngOnInit() {
     this.gameService.getGameHistory().subscribe( data => {
      this.games = data;
+     alert('games history loaded');
     });
   }
 

@@ -2,10 +2,23 @@
     display: flex;
     margin: 2px;
     padding: 5px;
-    width: 500px;
+    width: 800px;
 }
 
 .team {
     border: 1px solid black;
-    magin: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+.team_cont {
+    margin: auto;
+}
+
+.score_cont {
+    margin: auto;
+    padding: 10px;
+    font-size: 21pt;
 }
